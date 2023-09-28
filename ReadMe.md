@@ -53,13 +53,15 @@ RegisterNetEvent('inventory:server:UseItem', function(inventory, item)
 end)
 ```
 - You need to add that line in both events else people will be able to exploit it
-- For support join my [Discord](https://discord.gg/S7SXz7E8St)
+- For support join my [Discord](https://discord.gg/hZfpRUv4Nr)
 
 **DEPENDENCIES**
 -----
+# Dependency
+* [qb-core](https://github.com/qbcore-framework)
+* [qb-inventory]( https://github.com/qbcore-framework/qb-inventory)
 
-- QBCore - https://github.com/qbcore-framework
-- QB-Inventory - https://github.com/qbcore-framework/qb-inventory
+
 ## Authors
 
 - [@koolaash](https://github.com/koolaash)
