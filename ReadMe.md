@@ -59,7 +59,7 @@ end)
 -----
 # Dependency
 * [qb-core](https://github.com/qbcore-framework)
-* [qb-inventory]( https://github.com/qbcore-framework/qb-inventory)
+* [qb-inventory](https://github.com/qbcore-framework/qb-inventory)
 
 
 ## Authors
