@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'kool_damon'
+author 'Dream Scriptes'
 description 'safezone script'
 version '1.1.0'
 
