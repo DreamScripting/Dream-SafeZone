@@ -1,5 +1,9 @@
 Config = {}
 
+Config.CoreName = "qb-core"
+
+Config.Textui = 'qb' -- Put okok If you are using okokTextUI
+
 -- Change the coords here down for your zones
 Config.zones = {
 	{ ['x'] = 228.57,  ['y'] = -786.07,  ['z'] = 30.7  },  -- legion parking 
