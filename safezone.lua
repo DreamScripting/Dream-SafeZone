@@ -1,4 +1,4 @@
-local QBCore = exports['qb-core']:GetCoreObject()
+local QBCore = exports[Config.CoreName]:GetCoreObject()
 
 local notifIn = false
 local notifOut = false
@@ -56,7 +56,11 @@ Citizen.CreateThread(function()
 	
 		if dist <= Config.ZoneRange then 
 			if not notifIn then
-				exports['okokTextUI']:Open('You Are in safe zone', 'darkred', 'right') -- change your text ui 
+				if Config.Textui == 'okok' then
+				exports['okokTextUI']:Open('You Are in safe zone', 'darkred', 'right') 
+				elseif Config.Textui == 'qb' then
+					exports[Config.CoreName]:DrawText('You Are in safe zone', 'left')
+				end
 				local isEmergencyJob = getEmergencyJob()
 
 				if not isEmergencyJob then
@@ -68,7 +72,11 @@ Citizen.CreateThread(function()
 			end
 		else
 			if not notifOut then
-			exports['okokTextUI']:Close() -- change your text ui 
+				if Config.Textui == 'okok' then
+			exports['okokTextUI']:Close() 
+			elseif Config.Textui == 'qb' then
+				exports[Config.CoreName]:HideText()
+			end
 				notifOut = true
 				notifIn = false
 		end
